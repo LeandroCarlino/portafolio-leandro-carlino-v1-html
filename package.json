@@ -1,9 +1,9 @@
 {
-  "name": "portafolio-leandro-react",
+  "name": "portafolio-leandro-carlino",
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "Portafolio de Leandro Carlino migrado a React (Vite)",
+  "description": "Portafolio de Leandro Carlino",
   "scripts": {
     "dev": "vite",
     "start": "vite",
