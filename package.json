@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-leandro-react",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portafolio de Leandro Carlino migrado a React (Vite)",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Leandro Matías Carlino Aráoz",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^5.0.0"
+  }
+}
