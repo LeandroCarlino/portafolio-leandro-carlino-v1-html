@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from './Modal'
 
 export default function Hero() {
   return (
@@ -35,7 +36,7 @@ export default function Hero() {
           </div>
           <div className="cta-row" style={{marginTop: '1rem'}}>
             <a className="btn-primary" href="#projects">Ver proyectos</a>
-            <a className="btn-outline" href="mailto:leandro.ca.98@gmail.com">Contactar</a>
+            <Modal />
             <a className="btn-outline" href="https://drive.google.com/file/d/1zsQwTAZBzJYYbsFciopvNqYDZowcMwB5/preview" target="_blank" rel="noreferrer">Ver CV</a>
           </div>
           <div className="hero-accent" aria-hidden="true"></div>

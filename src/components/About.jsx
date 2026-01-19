@@ -40,7 +40,6 @@ export default function About() {
 
       <div className="about-card">
         <h2>Habilidades técnicas</h2>
-        <h3>Habilidades técnicas</h3>
         <div className="skills-grid">
           <div className="skill-category">
             <h4>Frontend</h4>
