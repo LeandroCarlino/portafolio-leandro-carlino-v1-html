@@ -18,27 +18,73 @@ export default function About() {
           </ul>
         </div>
         <div className="about-card">
-          <h2>Formación y habilidades</h2>
-          <p>Estudio la carrera de Programador Universitario y complemento mi formación con cursos prácticos y proyectos reales. Me enfoco en aprendizaje continuo, buenas prácticas y entrega de producto.</p>
-          <h3>Habilidades técnicas</h3>
-          <div className="tech-row" aria-hidden="false">
-            <img src="/img/icono-html.png" alt="HTML" title="HTML" loading="lazy" decoding="async" />
-            <img src="/img/icono-css.png" alt="CSS" title="CSS" loading="lazy" decoding="async" />
-            <img src="/img/icono-js.png" alt="JavaScript" title="JavaScript" loading="lazy" decoding="async" />
-            <img src="/img/icono-typescript.png" alt="TypeScript" title="TypeScript" loading="lazy" decoding="async" />
-            <img src="/img/icono-angular.png" alt="Angular" title="Angular" loading="lazy" decoding="async" />
-            <img src="/img/icono-git.png" alt="Git" title="Git" loading="lazy" decoding="async" />
+          <h2>Educación</h2>
+          <div className="education-item">
+            <h3>Universidad Nacional de Tucumán</h3>
+            <p className="education-degree">Programador Universitario - En curso</p>
           </div>
-          <h3 style={{marginTop: '0.75rem'}}>Competencias</h3>
-          <ul className="highlights">
-            <li>Entrega orientada a resultados y prioridades de producto</li>
-            <li>Capacidad de aprendizaje y adaptación rápida a nuevas tecnologías</li>
-            <li>Atención a la accesibilidad, rendimiento y calidad del front-end</li>
-            <li>Manejo de Git flow y despliegues en plataformas como Vercel/Netlify</li>
+          <div className="education-item">
+            <h3>Esc. De Comercio N°1</h3>
+            <p className="education-degree">Humanidades y Ciencias Sociales</p>
+          </div>
+          <h3 style={{ marginTop: '1.5rem' }}>Formación Complementaria</h3>
+          <ul className="education-list">
+            <li><strong>Argentina Programa:</strong> #SeProgramar</li>
+            <li><strong>Angular de Cero a Experto:</strong> Fernando Herrera</li>
+            <li><strong>Responsive Web Design:</strong> freeCodeCamp (300hs)</li>
+            <li><strong>Desarrollo Web:</strong> Google Actívate (80hs)</li>
+            <li><strong>Inglés:</strong> A.T.I.C.A.N.A (108hs)</li>
           </ul>
         </div>
       </div>
-      <div style={{marginTop: '1.25rem'}} className="about-card card-float">
+
+      <div className="about-card">
+        <h2>Habilidades técnicas</h2>
+        <h3>Habilidades técnicas</h3>
+        <div className="skills-grid">
+          <div className="skill-category">
+            <h4>Frontend</h4>
+            <div className="skill-tags">
+              <span className="skill-tag">HTML</span>
+              <span className="skill-tag">CSS</span>
+              <span className="skill-tag">Bootstrap</span>
+              <span className="skill-tag">JavaScript</span>
+              <span className="skill-tag">TypeScript</span>
+              <span className="skill-tag">Angular</span>
+              <span className="skill-tag">React</span>
+              <span className="skill-tag">Material Design</span>
+            </div>
+          </div>
+          <div className="skill-category">
+            <h4>Herramientas</h4>
+            <div className="skill-tags">
+              <span className="skill-tag">Git</span>
+              <span className="skill-tag">GitHub</span>
+              <span className="skill-tag">GitLab</span>
+              <span className="skill-tag">Bitbucket</span>
+              <span className="skill-tag">Jira</span>
+              <span className="skill-tag">WordPress</span>
+            </div>
+          </div>
+          <div className="skill-category">
+            <h4>Metodologías</h4>
+            <div className="skill-tags">
+              <span className="skill-tag">SCRUM</span>
+              <span className="skill-tag">RxJS</span>
+              <span className="skill-tag">REST APIs</span>
+              <span className="skill-tag">Agile</span>
+            </div>
+          </div>
+        </div>
+        <h3 style={{ marginTop: '0.75rem' }}>Competencias</h3>
+        <ul className="highlights">
+          <li>Entrega orientada a resultados y prioridades de producto</li>
+          <li>Capacidad de aprendizaje y adaptación rápida a nuevas tecnologías</li>
+          <li>Atención a la accesibilidad, rendimiento y calidad del front-end</li>
+          <li>Manejo de Git flow y despliegues en plataformas como Vercel/Netlify</li>
+        </ul>
+      </div>
+      <div style={{ marginTop: '1.25rem' }} className="about-card card-float">
         <h2>Logros seleccionados</h2>
         <ul className="highlights">
           <li>Participación en entregas regulares dentro de sprints, priorizando calidad y plazos.</li>

@@ -6,18 +6,32 @@ export default function Hero() {
       <div className="container hero-inner">
         <img src="/img/photo.png" alt="Leandro Carlino" className="profile" loading="lazy" decoding="async" />
         <div className="hero-text hero-animate">
-          <h1>Frontend Developer — Angular · React</h1>
+          <div className="hero-title">
+            <h1>Leandro Carlino</h1>
+            <h2>Frontend Developer</h2>
+          </div>
+          <div className="hero-stats">
+            <div className="stat-item">
+              <span className="stat-number">3+</span>
+              <span className="stat-label">Años de experiencia</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">500+</span>
+              <span className="stat-label">Horas de formación</span>
+            </div>
+          </div>
           <p className="lead">
-            Construyo interfaces accesibles, escalables y enfocadas en la experiencia de usuario.
-            Entrego valor en ciclos ágiles y trabajo de forma cruzada con product, diseño y QA.
+            Especializado en Angular y React, desarrollo interfaces escalables para bancos digitales y dashboards corporativos. 
+            Transformo requisitos de producto en soluciones frontend de alto rendimiento.
           </p>
           <div className="hero-badges" aria-hidden="true">
-            <span className="badge">Accesibilidad (A11y)</span>
+            <span className="badge">Angular</span>
+            <span className="badge">TypeScript</span>
+            <span className="badge">SCRUM</span>
             <span className="badge">Performance</span>
-            <span className="badge">Testing básico</span>
           </div>
           <div className="hero-meta muted" style={{marginTop: '0.8rem'}}>
-            <strong>Disponibilidad:</strong> Full‑time · Remoto / Híbrido · Disponible para entrevistas
+            <strong>Actualmente:</strong> Frontend Developer @ ICBC y MOBYDIGITAL · San Miguel de Tucumán, Argentina
           </div>
           <div className="cta-row" style={{marginTop: '1rem'}}>
             <a className="btn-primary" href="#projects">Ver proyectos</a>

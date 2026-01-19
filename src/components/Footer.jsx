@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <div>
           <h3>¿Buscas talento Frontend?</h3>
-          <p className="muted">Envía la descripción del puesto o invita a una entrevista técnica — adapto mi CV y portfolio para cada proceso.</p>
+          <p className="muted">Puedes contactar a través de estos medios</p>
         </div>
         <div className="contacts">
           <a href="mailto:leandro.ca.98@gmail.com"><img src="/img/icono-gmail.png" alt="gmail" loading="lazy" decoding="async" /></a>
