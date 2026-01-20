@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/ProjectCard.css'
 
 const projects = [
   { title: 'Post and View', img: '/img/post-and-view.png', href: 'https://post-and-view.vercel.app/home', desc: 'Aplicación full-stack para crear y ver publicaciones. Frontend centrado en usabilidad y rendimiento.', tags: ['React', 'Firebase'] },
@@ -7,7 +8,7 @@ const projects = [
   { title: 'Paises App', img: '/img/paises-app.png', href: 'https://paises-app-eight.vercel.app', desc: 'Explorador de países que muestra consumo de APIs y gestión de estado en el frontend.', tags: ['Angular', 'REST'] }
 ]
 
-export default function Projects() {
+const Projects = React.memo(() => {
   return (
     <section id="projects" className="projects container">
       <h2>Proyectos destacados</h2>
@@ -18,9 +19,9 @@ export default function Projects() {
             <img src={p.img} alt={p.title} loading="lazy" decoding="async" />
             <div className="project-info">
               <strong>{p.title}</strong>
-              <p className="muted" style={{marginTop: '0.5rem'}}>{p.desc}</p>
-              <div style={{marginTop: '0.75rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap'}}>
-                {p.tags.map((t) => <span key={t} style={{fontSize: '12px', color: 'var(--muted)', background: 'rgba(255,255,255,0.02)', padding: '4px 8px', borderRadius: '999px'}}>{t}</span>)}
+              <p className="muted">{p.desc}</p>
+              <div className="project-tags">
+                {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
               </div>
             </div>
           </a>
@@ -28,5 +29,7 @@ export default function Projects() {
       </div>
     </section>
   )
-}
+})
+
+export default Projects
 

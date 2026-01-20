@@ -7,7 +7,18 @@ export default defineConfig({
     port: 4200
   },
   build: {
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom']
+        }
+      }
+    },
+    minify: 'terser',
+    sourcemap: false,
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true
   }
 })
 

@@ -1,0 +1,383 @@
+/* 🎨 Creative Portfolio Enhancements */
+
+/* Animated Background */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(1deg); }
+  66% { transform: translateY(10px) rotate(-1deg); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(31, 190, 207, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(31, 190, 207, 0.6); }
+}
+
+@keyframes slideInFromLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Enhanced Body Background */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(31, 190, 207, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Hero Creative Enhancements */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+/* Floating Particles Background */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(31, 190, 207, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 85% 25%, rgba(139, 92, 246, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 25% 75%, rgba(236, 72, 153, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 75% 85%, rgba(31, 190, 207, 0.2) 1px, transparent 1px);
+  background-size: 50px 50px, 60px 60px, 40px 40px, 55px 55px;
+  animation: float 10s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+/* Enhanced Profile Image */
+.profile {
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 40px rgba(31, 190, 207, 0.5);
+  transition: all 0.3s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+.profile:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 60px rgba(31, 190, 207, 0.8);
+}
+
+/* Creative Hero Text */
+.hero-title h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--accent), #8b5cf6, #ec4899);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.hero-title h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--muted);
+  position: relative;
+}
+
+/* Typewriter Effect for subtitle */
+.hero-title h2::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: var(--accent);
+  margin-left: 5px;
+}
+
+/* Enhanced Stats */
+.stat-item {
+  background: var(--glass);
+  border: 1px solid var(--glass);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(31, 190, 207, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(31, 190, 207, 0.3);
+}
+
+.stat-item:hover::before {
+  opacity: 1;
+  animation: float 2s ease-in-out infinite;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced Badges */
+.hero-badges .badge {
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0.25rem;
+  display: inline-block;
+  transform: translateY(0);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badges .badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+.hero-badges .badge:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(31, 190, 207, 0.4);
+}
+
+.hero-badges .badge:hover::before {
+  left: 100%;
+}
+
+/* Enhanced CTA Buttons */
+.cta-row .btn-primary,
+.cta-row .btn-outline {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.cta-row .btn-primary::before,
+.cta-row .btn-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s ease;
+}
+
+.cta-row .btn-primary:hover,
+.cta-row .btn-outline:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(31, 190, 207, 0.3);
+}
+
+.cta-row .btn-primary:hover::before,
+.cta-row .btn-outline:hover::before {
+  left: 100%;
+}
+
+/* Enhanced Hero Accent */
+.hero-accent {
+  height: 6px;
+  background: linear-gradient(90deg, #163a45, var(--accent), #8b5cf6, #ec4899);
+  background-size: 300% 300%;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  animation: gradientShift 3s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Creative Scroll Indicator */
+.hero::after {
+  content: '↓';
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--accent);
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-10px); }
+  60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Enhanced Navigation */
+.nav {
+  background: rgba(11, 18, 32, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(31, 190, 207, 0.1), transparent);
+  animation: slideInFromLeft 8s linear infinite;
+}
+
+/* Interactive Sections */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced Cards */
+.about-card,
+.project-card,
+.achievement-card,
+.experience-item {
+  background: var(--glass);
+  border: 1px solid var(--glass);
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before,
+.project-card::before,
+.achievement-card::before,
+.experience-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(31, 190, 207, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-card:hover,
+.project-card:hover,
+.achievement-card:hover,
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(31, 190, 207, 0.2);
+}
+
+.about-card:hover::before,
+.project-card:hover::before,
+.achievement-card:hover::before,
+.experience-item:hover::before {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero::before {
+    background-size: 30px 30px, 40px 40px, 25px 25px, 35px 35px;
+  }
+  
+  .stat-item {
+    padding: 1rem 1.5rem;
+  }
+  
+  .hero::after {
+    font-size: 1.5rem;
+    bottom: 20px;
+  }
+}

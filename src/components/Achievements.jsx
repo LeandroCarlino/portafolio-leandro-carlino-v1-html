@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function Achievements() {
+const Achievements = React.memo(() => {
   const achievements = [
-    { number: '500+', label: 'Horas de formación', icon: '📚' },
     { number: '3+', label: 'Años de experiencia', icon: '💼' },
-    { number: 'SCRUM', label: 'Metodología ágil', icon: '🔄' }
+    { number: '500+', label: 'Horas de formación', icon: '📚' },
+        { number: 'SCRUM', label: 'Metodología ágil', icon: '🔄' },
+
   ]
 
   return (
@@ -20,4 +21,6 @@ export default function Achievements() {
       </div>
     </section>
   )
-}
+})
+
+export default Achievements
