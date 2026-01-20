@@ -696,11 +696,24 @@ body {
   background: linear-gradient(180deg, rgba(241, 245, 249, 0.8), rgba(226, 232, 240, 0.6));
 }
 
-.footer-inner {
+.footer-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20rem
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-link {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.contact-link:hover {
+  opacity: 1;
 }
 
 .contacts img {
@@ -718,9 +731,14 @@ body {
 }
 
 @media (max-width:900px) {
-  .hero-inner {
+  .footer-content {
     flex-direction: column;
-    text-align: center
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .profile {
+    margin: 0 auto;
   }
 
   .about-grid {

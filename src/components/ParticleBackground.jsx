@@ -20,8 +20,8 @@ export default function ParticleBackground() {
         this.x = Math.random() * canvas.width
         this.y = Math.random() * canvas.height
         this.size = Math.random() * 3 + 1
-        this.speedX = Math.random() * 2 - 1
-        this.speedY = Math.random() * 2 - 1
+      this.speedX = Math.random() * 0.5 - 0.25
+      this.speedY = Math.random() * 0.5 - 0.25
         this.opacity = Math.random() * 0.5 + 0.2
       }
 
@@ -103,7 +103,7 @@ export default function ParticleBackground() {
         width: '100%',
         height: '100%',
         pointerEvents: 'none',
-        zIndex: 1,
+        zIndex: -1,
         opacity: 0.6
       }}
     />
