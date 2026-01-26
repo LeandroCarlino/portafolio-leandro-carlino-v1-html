@@ -2,10 +2,10 @@ import React from 'react'
 import '../styles/ProjectCard.css'
 
 const projects = [
-  { title: 'Post and View', img: '/img/post-and-view.png', href: 'https://post-and-view.vercel.app/home', desc: 'Aplicación full-stack para crear y ver publicaciones. Frontend centrado en usabilidad y rendimiento.', tags: ['React', 'Firebase'] },
-  { title: 'Generador de personas', img: '/img/people-generator.png', href: 'https://people-generator.vercel.app/', desc: 'Herramienta UI para generar datos de prueba, útil en prototipos y testing de interfaces.', tags: ['React', 'API'] },
+  { title: 'Post and View', img: '/img/post-and-view.png', href: 'https://post-and-view.vercel.app/home', desc: 'Aplicación full-stack para crear y ver publicaciones. Frontend centrado en usabilidad y rendimiento.', tags: ['Angular', 'Firebase'] },
+  { title: 'Generador de personas', img: '/img/people-generator.png', href: 'https://people-generator.vercel.app/', desc: 'Herramienta UI para generar datos de prueba, útil en prototipos y testing de interfaces.', tags: ['Angular', 'API'] },
   { title: 'Gifs App', img: '/img/gifs-app.png', href: 'https://gifs-app-beryl.vercel.app', desc: 'Integración con APIs públicas para búsqueda y visualización eficiente de GIFs.', tags: ['Vanilla JS', 'API'] },
-  { title: 'Paises App', img: '/img/paises-app.png', href: 'https://paises-app-eight.vercel.app', desc: 'Explorador de países que muestra consumo de APIs y gestión de estado en el frontend.', tags: ['Angular', 'REST'] }
+  { title: 'Paises App', img: '/img/paises-app.png', href: 'https://paises-app-eight.vercel.app', desc: 'Explorador de países que muestra consumo de APIs y gestión de estado en el frontend.', tags: ['Angular', 'API'] }
 ]
 
 const Projects = React.memo(() => {

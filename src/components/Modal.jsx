@@ -26,13 +26,13 @@ export default function Modal() {
 
   return (
     <>
-      <button className="btn-outline" onClick={openModal} style={{textDecoration: 'none', cursor: 'pointer', border: '1px solid rgba(255, 255, 255, 0.06)', background: 'transparent', padding: '.6rem 1rem', borderRadius: '12px', color: 'var(--text)', display: 'inline-block', textAlign: 'center', fontFamily: 'inherit', fontSize: 'inherit', lineHeight: 'inherit'}}>
+      <button className="btn-primary" onClick={openModal} style={{textDecoration: 'none', cursor: 'pointer', background: 'linear-gradient(90deg, var(--accent), #28d0e8)', color: '#022', padding: '.75rem 1.15rem', borderRadius: '12px', fontWeight: '700', boxShadow: '0 8px 20px rgba(31, 190, 207, 0.12)', border: 'none', display: 'inline-block', textAlign: 'center', fontFamily: 'inherit', fontSize: 'inherit', lineHeight: 'inherit'}}>
         Contactar
       </button>
 
       {isOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-overlay">
+          <div className="modal-content">
             <div className="modal-header">
               <h3>Contactarme</h3>
               <button className="modal-close" onClick={closeModal}>×</button>

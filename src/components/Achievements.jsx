@@ -1,8 +1,20 @@
 import React from 'react'
 
 const Achievements = React.memo(() => {
+  const calculateYearsOfExperience = () => {
+    const startDate = new Date(2022, 3, 1); // Abril 2022 (mes 3 porque los meses son 0-indexed)
+    const currentDate = new Date();
+    const yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
+    const monthsDiff = currentDate.getMonth() - startDate.getMonth();
+    
+    const totalYears = monthsDiff >= 0 ? yearsDiff : yearsDiff - 1;
+    return totalYears >= 3 ? `${totalYears}+` : `${totalYears}`;
+  };
+
+  const yearsOfExperience = calculateYearsOfExperience();
+
   const achievements = [
-    { number: '3+', label: 'Años de experiencia', icon: '💼' },
+    { number: yearsOfExperience, label: 'Años de experiencia', icon: '💼' },
     { number: '500+', label: 'Horas de formación', icon: '📚' },
         { number: 'SCRUM', label: 'Metodología ágil', icon: '🔄' },
 
