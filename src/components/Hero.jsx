@@ -6,7 +6,6 @@ export default function Hero() {
     <header id="hero" className="hero">
       <div className="container hero-inner">
         <div className="hero-content">
-          <img src="/img/photo.png" alt="Leandro Carlino" className="profile" loading="lazy" decoding="async" />
           <div className="hero-text hero-animate">
             <div className="hero-title">
               <h1>Leandro Carlino</h1>

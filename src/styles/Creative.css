@@ -325,11 +325,17 @@ section.visible {
 /* Enhanced Cards */
 .about-card,
 .project-card,
-.achievement-card,
-.experience-item {
+.achievement-card {
   background: var(--glass);
   border: 1px solid var(--glass);
   backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-item {
   transform: translateY(0);
   transition: all 0.3s ease;
   position: relative;
@@ -353,16 +359,14 @@ section.visible {
 
 .about-card:hover,
 .project-card:hover,
-.achievement-card:hover,
-.experience-item:hover {
+.achievement-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(31, 190, 207, 0.2);
 }
 
 .about-card:hover::before,
 .project-card:hover::before,
-.achievement-card:hover::before,
-.experience-item:hover::before {
+.achievement-card:hover::before {
   opacity: 1;
 }
 

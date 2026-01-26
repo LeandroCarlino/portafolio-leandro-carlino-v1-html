@@ -11,7 +11,7 @@
 .light {
   --bg: #f8fafc;
   --card: #ffffff;
-  --shadow: rgba(216, 219, 219, 0.6);
+  --shadow: rgba(216, 219, 219, 0.2);
   --text: #0f172a;
   --muted: #475569;
   --accent: #0ea5e9;
@@ -217,6 +217,11 @@ body {
 
 .nav-links a:hover {
   background: rgba(31, 190, 207, 0.06);
+  color: var(--text)
+}
+
+.light .nav-links a:hover {
+  background: rgba(14, 165, 233, 0.08);
   color: var(--text)
 }
 
@@ -453,6 +458,11 @@ body {
   border-color: rgba(31, 190, 207, 0.3)
 }
 
+.light .skill-tag:hover {
+  background: rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.25)
+}
+
 .tech-row img {
   width: 46px;
   margin-right: 0.6rem;
@@ -547,7 +557,7 @@ body {
 }
 
 .experience-date {
-  min-width: 200px;
+  width: 200px;
   color: var(--muted);
   font-size: 0.9rem;
   padding-top: 8px;
@@ -559,7 +569,9 @@ body {
   background: linear-gradient(180deg, var(--card), var(--shadow));
   padding: 1.5rem;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6)
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+  border-left: 4px solid var(--accent);
+  position: relative
 }
 
 .experience-header {
@@ -598,7 +610,9 @@ body {
   border-radius: 999px;
   background: rgba(31, 190, 207, 0.08);
   color: var(--accent);
-  border: 1px solid rgba(31, 190, 207, 0.2)
+  border: 1px solid rgba(31, 190, 207, 0.2);
+  font-weight: 500;
+  transition: all 200ms ease
 }
 
 .projects {
@@ -877,7 +891,25 @@ body {
   box-shadow: 0 12px 28px rgba(31, 190, 207, 0.18);
 }
 
+.light .btn-primary:hover {
+  box-shadow: 0 12px 28px rgba(14, 165, 233, 0.15);
+}
+
 .btn-outline:hover {
   transform: translateY(-2px);
   border-color: rgba(31, 190, 207, 0.3);
+}
+
+.light .btn-outline:hover {
+  border-color: rgba(14, 165, 233, 0.25);
+  background: rgba(14, 165, 233, 0.05);
+}
+
+.light .experience-content {
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.08);
+}
+
+.light .tech-tag {
+  background: rgba(14, 165, 233, 0.08);
+  border-color: rgba(14, 165, 233, 0.2);
 }

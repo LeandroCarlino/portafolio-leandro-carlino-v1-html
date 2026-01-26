@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="nav" aria-label="Navegación principal">
       <div className="nav-inner container">
-        <div className="brand">Leandro Carlino</div>
+        <div className="brand">Portfolio</div>
 
         <div className="nav-actions">
 
