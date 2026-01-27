@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer id="contact" className="site-footer">
       <div className="container">
         <div className="footer-content">
           <div className="contacts">
