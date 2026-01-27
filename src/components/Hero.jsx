@@ -40,7 +40,7 @@ export default function Hero() {
             <span className="badge">Performance</span>
           </div>
           <div className="hero-meta muted" style={{marginTop: '0.8rem'}}>
-            <strong>Actualmente:</strong> Frontend Developer @ ICBC y MOBYDIGITAL · San Miguel de Tucumán, Argentina
+            <strong>Actualmente:</strong> Frontend Developer @ ICBC y MOBYDIGITAL · Remoto
           </div>
             <div className="cta-row">
               <Modal />
