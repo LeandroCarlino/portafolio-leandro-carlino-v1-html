@@ -1,7 +1,6 @@
-import React from 'react'
 import Modal from './Modal'
 
-export default function Hero() {
+export default function Profile() {
   const calculateYearsOfExperience = () => {
     const startDate = new Date(2022, 3, 1);
     const currentDate = new Date();
@@ -15,15 +14,15 @@ export default function Hero() {
   const yearsOfExperience = calculateYearsOfExperience();
 
   return (
-    <header id="hero" className="hero">
-      <div className="container hero-inner">
-        <div className="hero-content">
-          <div className="hero-text hero-animate">
-            <div className="hero-title">
+    <header id="profile" className="profile">
+      <div className="container profile-inner">
+        <div className="profile-content">
+          <div className="profile-text profile-animate">
+            <div className="profile-title">
               <h1>Leandro Carlino</h1>
               <h2>Frontend Developer</h2>
             </div>
-            <div className="hero-stats">
+            <div className="profile-stats">
               <div className="stat-item">
                 <span className="stat-number">{yearsOfExperience}</span>
                 <span className="stat-label">Años de experiencia</span>
@@ -33,20 +32,20 @@ export default function Hero() {
             Especializado en Angular y React, desarrollo interfaces escalables para bancos digitales y dashboards corporativos. 
             Transformo requisitos de producto en soluciones frontend de alto rendimiento.
           </p>
-          <div className="hero-badges" aria-hidden="true">
+          <div className="profile-badges" aria-hidden="true">
             <span className="badge">Angular</span>
             <span className="badge">TypeScript</span>
             <span className="badge">SCRUM</span>
             <span className="badge">Performance</span>
           </div>
-          <div className="hero-meta muted" style={{marginTop: '0.8rem'}}>
+          <div className="profile-meta muted" style={{marginTop: '0.8rem'}}>
             <strong>Actualmente:</strong> Frontend Developer @ ICBC y MOBYDIGITAL · Remoto
           </div>
             <div className="cta-row">
               <Modal />
               <a className="btn-outline" href="https://drive.google.com/file/d/1vcPdEto53FVj5nT_gPy4AZuwIBIWEa9A/preview" target="_blank" rel="noreferrer">Ver CV</a>
             </div>
-            <div className="hero-accent" aria-hidden="true"></div>
+            <div className="profile-accent" aria-hidden="true"></div>
           </div>
         </div>
       </div>

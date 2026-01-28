@@ -11,8 +11,7 @@ const projects = [
 const Projects = React.memo(() => {
   return (
     <section id="projects" className="projects container">
-      <h2>Proyectos destacados</h2>
-      <p className="muted">Haz clic en cualquier tarjeta para revisar la demo y el código.</p>
+      <h2 class="title-h2">Proyectos destacados</h2>
       <div className="projects-grid" role="list">
         {projects.map((p) => (
           <a className="project-card" key={p.title} href={p.href} target="_blank" rel="noreferrer" role="listitem" aria-label={`Abrir ${p.title}`}>

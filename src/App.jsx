@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Navbar from './components/Navbar'
 import ParticleBackground from './components/ParticleBackground'
-import Hero from './components/Hero'
+import Profile from './components/profile'
 import About from './components/About'
 import Achievements from './components/Achievements'
 import Experience from './components/Experience'
@@ -38,7 +38,7 @@ function AppContent() {
       <ParticleBackground />
       <Navbar />
       <main>
-        <Hero />
+        <Profile />
         <About />
         <Achievements />
         <Experience />

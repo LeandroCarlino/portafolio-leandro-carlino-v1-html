@@ -20,7 +20,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="experience container">
-      <h2>Experiencia Laboral</h2>
+      <h2 class="title-h2">Experiencia Laboral</h2>
       <div className="experience-timeline">
         {experiences.map((exp, index) => (
           <div key={exp.company} className="experience-item">

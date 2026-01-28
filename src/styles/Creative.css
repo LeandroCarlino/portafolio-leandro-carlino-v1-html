@@ -54,8 +54,8 @@ body::before {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Hero Creative Enhancements */
-.hero {
+/* profile Creative Enhancements */
+.profile {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -63,12 +63,12 @@ body::before {
   overflow: hidden;
 }
 
-.hero-inner {
+.profile-inner {
   position: relative;
   z-index: 2;
 }
 
-.hero-content {
+.profile-content {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 3rem;
@@ -76,7 +76,7 @@ body::before {
 }
 
 @media (max-width: 768px) {
-  .hero-content {
+  .profile-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
@@ -84,7 +84,7 @@ body::before {
 }
 
 /* Floating Particles Background */
-.hero::before {
+.profile::before {
   content: '';
   position: absolute;
   top: 0;
@@ -101,22 +101,9 @@ body::before {
   opacity: 0.3;
 }
 
-/* Enhanced Profile Image */
-.profile {
-  border-radius: 50%;
-  border: 4px solid var(--accent);
-  box-shadow: 0 0 40px rgba(31, 190, 207, 0.5);
-  transition: all 0.3s ease;
-  animation: float 4s ease-in-out infinite;
-}
 
-.profile:hover {
-  transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 0 60px rgba(31, 190, 207, 0.8);
-}
-
-/* Creative Hero Text */
-.hero-title h1 {
+/* Creative profile Text */
+.profile-title h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   background: linear-gradient(45deg, var(--accent), #8b5cf6, #ec4899);
@@ -126,7 +113,7 @@ body::before {
   position: relative;
 }
 
-.hero-title h2 {
+.profile-title h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 400;
   color: var(--muted);
@@ -134,7 +121,7 @@ body::before {
 }
 
 /* Typewriter Effect for subtitle */
-.hero-title h2::after {
+.profile-title h2::after {
   content: '|';
   animation: blink 1s infinite;
   color: var(--accent);
@@ -186,7 +173,7 @@ body::before {
 }
 
 /* Enhanced Badges */
-.hero-badges .badge {
+.profile-badges .badge {
   background: linear-gradient(135deg, var(--accent), #8b5cf6);
   color: white;
   padding: 0.5rem 1rem;
@@ -201,7 +188,7 @@ body::before {
   overflow: hidden;
 }
 
-.hero-badges .badge::before {
+.profile-badges .badge::before {
   content: '';
   position: absolute;
   top: 0;
@@ -212,12 +199,12 @@ body::before {
   transition: left 0.3s ease;
 }
 
-.hero-badges .badge:hover {
+.profile-badges .badge:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 5px 15px rgba(31, 190, 207, 0.4);
 }
 
-.hero-badges .badge:hover::before {
+.profile-badges .badge:hover::before {
   left: 100%;
 }
 
@@ -253,8 +240,8 @@ body::before {
   left: 100%;
 }
 
-/* Enhanced Hero Accent */
-.hero-accent {
+/* Enhanced profile Accent */
+.profile-accent {
   height: 6px;
   background: linear-gradient(90deg, #163a45, var(--accent), #8b5cf6, #ec4899);
   background-size: 300% 300%;
@@ -272,7 +259,7 @@ body::before {
 }
 
 /* Creative Scroll Indicator */
-.hero::after {
+.profile::after {
   content: '↓';
   position: absolute;
   bottom: 30px;
@@ -371,7 +358,7 @@ section.visible {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .hero::before {
+  .profile::before {
     background-size: 30px 30px, 40px 40px, 25px 25px, 35px 35px;
   }
   
@@ -379,7 +366,7 @@ section.visible {
     padding: 1rem 1.5rem;
   }
   
-  .hero::after {
+  .profile::after {
     font-size: 1.5rem;
     bottom: 20px;
   }

@@ -44,14 +44,17 @@ export default function About() {
           <div className="skill-category">
             <h4>Frontend</h4>
             <div className="skill-tags">
+              <span className="skill-tag">Angular</span>
+              <span className="skill-tag">TypeScript</span>
+              <span className="skill-tag">React</span>
+              <span className="skill-tag">JavaScript</span>
               <span className="skill-tag">HTML</span>
               <span className="skill-tag">CSS</span>
               <span className="skill-tag">Bootstrap</span>
-              <span className="skill-tag">JavaScript</span>
-              <span className="skill-tag">TypeScript</span>
-              <span className="skill-tag">Angular</span>
-              <span className="skill-tag">React</span>
+              <span className="skill-tag">Tailwind</span>
+              <span className="skill-tag">Wordpress</span>
               <span className="skill-tag">Material Design</span>
+              <span className="skill-tag">NestJS</span>
             </div>
           </div>
           <div className="skill-category">
@@ -63,13 +66,13 @@ export default function About() {
               <span className="skill-tag">Bitbucket</span>
               <span className="skill-tag">Jira</span>
               <span className="skill-tag">WordPress</span>
+              <span className="skill-tag">Miro</span>
             </div>
           </div>
           <div className="skill-category">
             <h4>Metodologías</h4>
             <div className="skill-tags">
               <span className="skill-tag">SCRUM</span>
-              <span className="skill-tag">RxJS</span>
               <span className="skill-tag">REST APIs</span>
               <span className="skill-tag">Agile</span>
             </div>

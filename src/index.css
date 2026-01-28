@@ -148,7 +148,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(145, 45, 45, 0.2);
 }
 
 .theme-toggle-thumb--light {
@@ -231,43 +231,36 @@ body {
   outline-offset: 3px
 }
 
-.hero {
+.profile {
   padding-top: 110px;
   padding-bottom: 4rem
 }
 
-.hero-inner {
+.profile-inner {
   display: flex;
   gap: 2.25rem;
   align-items: center
 }
 
 .profile {
-  width: 150px;
-  border-radius: 18px;
-  border: 4px solid rgba(31, 190, 207, 0.12);
-  box-shadow: 0 14px 40px rgba(2, 8, 20, 0.6)
-}
-
-.profile {
   transition: transform 280ms cubic-bezier(.2, .9, .2, 1), box-shadow 280ms
 }
 
-.hero-title h1 {
+.profile-title h1 {
   margin: 0;
   font-size: 2.8rem;
   letter-spacing: -0.5px;
   color: var(--accent)
 }
 
-.hero-title h2 {
+.profile-title h2 {
   margin: 0;
   font-size: 1.8rem;
   letter-spacing: -0.3px;
   margin-top: 0.3rem
 }
 
-.hero-stats {
+.profile-stats {
   display: flex;
   gap: 1.5rem;
   margin: 1.5rem 0
@@ -322,14 +315,14 @@ body {
   text-decoration: none
 }
 
-.hero-accent {
+.profile-accent {
   height: 6px;
   background: linear-gradient(90deg, #163a45, var(--accent));
   border-radius: 6px;
   margin-top: 1.5rem
 }
 
-.hero-badges {
+.profile-badges {
   margin-top: 0.9rem;
   display: flex;
   gap: 0.5rem;
@@ -345,7 +338,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.02)
 }
 
-.hero-animate {
+.profile-animate {
   animation: fadeUp 700ms ease both;
 }
 
@@ -369,7 +362,7 @@ body {
   background: linear-gradient(180deg, var(--card), var(--shadow));
   padding: 1.5rem;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+  box-shadow: 0 5px 10px rgba(2, 6, 23, 0.6);
   display: flex;
   flex-direction: column
 }
@@ -486,7 +479,7 @@ body {
   background: linear-gradient(180deg, var(--card), var(--shadow));
   padding: 2rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+  box-shadow: 0 5px 10px rgba(2, 6, 23, 0.6);
   transition: transform 320ms cubic-bezier(.2, .9, .2, 1), box-shadow 320ms
 }
 
@@ -570,7 +563,7 @@ body {
   background: linear-gradient(180deg, var(--card), var(--shadow));
   padding: 1.5rem;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+  box-shadow: 0 5px 10px rgba(2, 6, 23, 0.6);
   border-left: 4px solid var(--accent);
   position: relative
 }
@@ -694,6 +687,10 @@ body {
   margin-top: 0
 }
 
+.title-h2 {
+  margin-bottom: 2rem;
+}
+
 @media (max-width:900px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -773,7 +770,7 @@ body {
     padding: 0.6rem 0.75rem
   }
 
-  .hero-stats {
+  .profile-stats {
     justify-content: center
   }
 
@@ -799,16 +796,22 @@ body {
   }
 }
 
+@media (max-width:1200px) {
+  .title-h2 {
+    text-align: center;
+  }
+}
+
 @media (max-width:600px) {
-  .hero-title h1 {
+  .profile-title h1 {
     font-size: 2.2rem
   }
 
-  .hero-title h2 {
+  .profile-title h2 {
     font-size: 1.4rem
   }
 
-  .hero-stats {
+  .profile-stats {
     gap: 1rem
   }
 
@@ -869,7 +872,7 @@ body {
   }
 }
 
-.hero-animate {
+.profile-animate {
   animation: fadeUp 800ms ease both;
 }
 
